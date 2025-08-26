@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(24, 24, 24);
+    color: rgb(255, 200, 200)}
+a{
+     color: rgb(255, 0, 98);}
+span{
+    color:rgb(255, 0, 98)
+}
+button{
+    background-color: rgb(255, 0, 98);
+    color: rgb(24, 24, 24);
+    border-radius: 150px ;
+    border: 0
+}
+input{
+    background-color: rgb(36, 36, 36);
+    color:rgb(255, 200, 200);
+}
