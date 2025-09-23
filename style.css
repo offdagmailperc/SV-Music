@@ -1,18 +1,25 @@
 body{
     background-color: rgb(24, 24, 24);
-    color: rgb(255, 200, 200)}
+    color: rgb(255, 200, 200);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 a{
-     color: rgb(255, 0, 98);}
+    color: rgb(255, 0, 98);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 span{
-    color:rgb(255, 0, 98)
+    color:rgb(255, 0, 98);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 button{
     background-color: rgb(255, 0, 98);
     color: rgb(24, 24, 24);
     border-radius: 150px ;
-    border: 0
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 input{
     background-color: rgb(36, 36, 36);
     color:rgb(255, 200, 200);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
