@@ -1,15 +1,33 @@
+:root{
+  --accent-color: rgb(255, 0, 98);
+  --base-color: rgb(24, 24, 24);
+  --text-color: rgb(255, 200, 200);
+  --input-color: rgb(36, 36, 36);
+}
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    background-color: rgb(24, 24, 24);
-    color: rgb(255, 200, 200);
+    background-color: var(--base-color);
+    color: var(--text-color);
 }
 a{
-    color: rgb(255, 0, 98);
+    color: var(--accent-color);
 }
 span{
-    color:rgb(255, 0, 98);
+    color:var(--accent-color);
+}
+audio{
+  flex-shrink: 0;
+  background-color: var(--accent-color);
+  fill: var(--base-color);
+  color: var(--base-color);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 button{
     background-color: rgb(255, 0, 98);
