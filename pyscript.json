@@ -1,0 +1,3 @@
+{
+  "packages": ["tinytag", "mutagen", "yt_dlp", "ssl"]
+}

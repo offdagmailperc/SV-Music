@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Toggle Control</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px;">
+    <h2>Custom Audio Player</h2>
+    <audio id="toggleAudio">
+        <source src="father.mp3" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <br><br>
+    <button id="toggleBtn" onclick="togglePlay()">Play</button>
+    <button onclick="checkPlayingStatus()">Check Status</button>
+    <p id="playStatus">Audio is ready to play.</p>
+    
+    <script>
+        var audio = document.getElementById("toggleAudio");
+        var toggleBtn = document.getElementById("toggleBtn");
+        
+        function togglePlay() {
+            if (audio.paused) {
+                audio.play();
+                toggleBtn.textContent = "Pause";
+            } else {
+                audio.pause();
+                toggleBtn.textContent = "Play";
+            }
+        }
+        
+        function checkPlayingStatus() {
+            const audioElement = document.getElementById("toggleAudio");
+            audioElement.addEventListener("loadedmetadata", () => {
+                    const duration = audioElement.duration;
+                    let v = Math.floor((audio.currentTime / 60));
+                    let w = (audio.currentTime % 60).toFixed(0);
+                    let x = Math.floor((duration / 60));
+                    let y = (duration % 60).toFixed(0);
+                    document.getElementById("duration").textContent = '${v}:${w}/${x}:${y}';  
+            });
+        }
+        
+        // Update button text when audio ends
+        audio.addEventListener('ended', function() {
+            toggleBtn.textContent = "Play";
+        });
+    </script>
+</body>
+</html>

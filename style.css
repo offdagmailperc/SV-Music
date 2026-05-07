@@ -19,21 +19,21 @@ span{
 }
 audio{
   flex-shrink: 0;
-  background-color: var(--accent-color);
-  fill: var(--base-color);
-  color: var(--base-color);
-  border-radius: 100px;
+  background-color: var(--text-color);
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   font-weight: 500;
+  width: 500px;
 }
 button{
-    background-color: rgb(255, 0, 98);
-    color: rgb(24, 24, 24);
-    border-radius: 150px ;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 15px ;
     border: 0;
+    padding: 0;
 }
 input{
     background-color: rgb(36, 36, 36);
