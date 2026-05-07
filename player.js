@@ -7,7 +7,7 @@ function getTime(){
     let w = (audio.currentTime % 60).toFixed(0);
     let x = Math.floor((duration / 60));
     let y = (duration % 60).toFixed(0);
-    document.getElementById("duration").textContent = '${v}:${w}/${x}:${y}';
+    document.getElementById("duration").textContent = `${v}:${w}/${x}:${y}`;
   
   
   
